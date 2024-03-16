@@ -1,0 +1,84 @@
+* {
+    font-family: "Chilanka", cursive;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    float: right;
+    margin: 0;
+}
+
+p {
+    clear: right;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.row {
+    margin-top: 5rem;
+    padding: 0 2rem 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section {
+    background-color: #999999;
+    border: 2px solid black;
+    flex: 30%;
+    flex-grow: 1;
+}
+
+.title {
+    padding: 5px 20px 3px;
+    float: right;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.c {
+    background-color: #d59898;
+}
+
+.b {
+    background-color: #c14543;
+    color: white;
+}
+
+.s {
+    background-color: #e5d198;
+}
+
+/* body {
+    background-color: green;
+} */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    section {
+        flex: 40%;
+    }
+
+    /* body {
+        background-color: red;
+    } */
+}
+
+@media (max-width: 767px) {
+    section {
+        flex: 1;
+        flex-basis: auto;
+    }
+
+    /* body {
+        background-color: blue;
+    } */
+}
